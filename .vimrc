@@ -25,3 +25,8 @@ else
 
 endif " has("autocmd")
 
+" => Nerd Tree
+"
+map <leader>nn :NERDTreeToggle<cr>
+map <leader>nf :NERDTreeFind<cr>
+
