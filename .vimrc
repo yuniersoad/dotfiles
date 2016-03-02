@@ -29,4 +29,5 @@ endif " has("autocmd")
 "
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
