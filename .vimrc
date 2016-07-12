@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
