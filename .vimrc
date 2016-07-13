@@ -15,6 +15,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -50,3 +51,7 @@ endif " has("autocmd")
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+
+" airline won't display without this
+set laststatus=2
+
