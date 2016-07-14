@@ -23,6 +23,7 @@ filetype plugin indent on    " required
 
 syntax on
 set foldmethod=syntax
+set t_Co=256
 
 let mapleader=","
 
