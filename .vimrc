@@ -17,6 +17,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -53,6 +54,11 @@ endif " has("autocmd")
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+
+" => Syntastic
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_go_checkers = ['go']
 
 " airline won't display without this
 set laststatus=2
