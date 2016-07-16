@@ -18,6 +18,7 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
