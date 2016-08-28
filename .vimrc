@@ -50,6 +50,8 @@ else
 
 endif " has("autocmd")
 
+set ignorecase
+
 " => Nerd Tree
 "
 map <leader>nn :NERDTreeToggle<cr>
