@@ -36,6 +36,11 @@ let mapleader=","
 :map <Leader>" i"<Esc>ea"<Esc>
 :map <Leader>' i'<Esc>ea'<Esc>
 
+:nmap <leader>Q :copen<cr>
+:nmap <leader>qn :cnext<cr>
+:nmap <leader>qp :cprev<cr>
+:nmap <leader>qc :cclose<cr>
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
