@@ -75,6 +75,7 @@ set laststatus=2
 
 " => Golang
 let g:go_list_type = "quickfix"
+let g:go_metalinter_autosave = 1
 au Filetype go nnoremap <leader>r :GoRun %<CR>
 au Filetype go nnoremap <leader>t :GoTest<CR>
 autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
