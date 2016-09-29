@@ -57,6 +57,7 @@ endif " has("autocmd")
 
 set ignorecase
 set autowrite
+set backspace=indent,eol,start
 
 " => Nerd Tree
 "
