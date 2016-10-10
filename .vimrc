@@ -62,6 +62,7 @@ endif " has("autocmd")
 set ignorecase
 set autowrite
 set backspace=indent,eol,start
+autocmd FileType ruby,python,go,c,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " => Nerd Tree
 "
@@ -76,6 +77,7 @@ let g:syntastic_go_checkers = ['go']
 
 " airline won't display without this
 set laststatus=2
+let g:airline_powerline_fonts = 1
 
 " => Golang
 let g:go_list_type = "quickfix"
