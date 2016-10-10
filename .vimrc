@@ -23,9 +23,13 @@ Plugin 'derekwyatt/vim-scala'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+
 syntax on
 set foldmethod=syntax
 set t_Co=256
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 let mapleader=","
 
