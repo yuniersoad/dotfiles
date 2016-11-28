@@ -121,3 +121,5 @@ endfunction
 
 autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 
+" => Git
+autocmd FileType gitcommit setlocal spell
