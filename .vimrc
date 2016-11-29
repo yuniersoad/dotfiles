@@ -72,7 +72,7 @@ map <leader>nf :NERDTreeFind<cr>
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
 " => Syntastic
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['go']
 
@@ -105,9 +105,15 @@ au Filetype ruby imap <buffer> <CR> <C-R>=RubyEndToken()<CR>
 " => Golang
 let g:go_list_type = "quickfix"
 let g:go_metalinter_autosave = 1
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'gocyclo', 'deadcode', 'gosimple', 'staticcheck']
+let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'gocyclo', 'deadcode', 'gosimple', 'staticcheck']
+let g:go_metalinter_deadline = "40s"
 au Filetype go nnoremap <leader>r :GoRun %<CR>
 au Filetype go nnoremap <leader>t :GoTest<CR>
 autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
+au FileType go nmap <Leader>l :GoMetaLinter<CR>
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
