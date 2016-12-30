@@ -123,6 +123,7 @@ autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
 au FileType go nmap <Leader>l :GoMetaLinter<CR>
+au FileType go nmap <Leader>e <Plug>(go-rename)
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
