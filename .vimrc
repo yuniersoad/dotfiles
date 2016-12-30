@@ -46,6 +46,15 @@ let mapleader=","
 :nmap <leader>qp :cprev<cr>
 :nmap <leader>qc :cclose<cr>
 
+:imap <C-@> <C-Space>
+:imap <C-Space> <C-x><C-o>
+:set completeopt=longest,menuone,preview
+:inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+:inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+:inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+\ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
