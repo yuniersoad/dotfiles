@@ -21,6 +21,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'tpope/vim-surround'
 Plugin 'mileszs/ack.vim'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
