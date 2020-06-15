@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler osx rake ruby go docker docker-compose rust cargo mvn vagrant aws)
+plugins=(git bundler osx rake ruby golang docker docker-compose rust cargo mvn sbt scala vagrant aws)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,6 +94,7 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 #Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export GO111MODULE=on
 
 #Java
 if [[ $OSTYPE == "darwin"* ]]; then export JAVA_HOME=$(/usr/libexec/java_home -v 1.8); fi
