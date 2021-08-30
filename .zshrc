@@ -100,7 +100,7 @@ export GO111MODULE=on
 if [[ $OSTYPE == "darwin"* ]]; then export JAVA_HOME=$(/usr/libexec/java_home -v 1.8); fi
 
 
-#Twilio
-if [ -f "$HOME/twilio.sh" ]; then source "$HOME/twilio.sh"; fi
+# Company internal stuff
+if [ -f "$HOME/work.sh" ]; then source "$HOME/work.sh"; fi
 
 
