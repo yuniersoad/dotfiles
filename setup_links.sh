@@ -5,7 +5,9 @@ if [ "$PWD" = "$HOME" ]; then
 	exit 1
 fi
 
-for f in ".gitconfig" ".gitignore" ".tmux.conf" ".vimrc" ".zshrc"
+DOT_FILES=".gitconfig .gitignore .tmux.conf .vimrc .zshrc .irbrc"
+
+for f in $DOT_FILES
 do
 	if [ ! -f "$PWD/$f" ]; then
 		echo "Error: Needs to be executed in dotfiles directory!"
@@ -13,7 +15,7 @@ do
 	fi
 done
 
-for f in ".gitconfig" ".gitignore" ".tmux.conf" ".vimrc" ".zshrc"
+for f in $DOT_FILES
 do
 	target="$HOME/$f"
 	source="$PWD/$f"
