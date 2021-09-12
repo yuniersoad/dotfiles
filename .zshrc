@@ -1,5 +1,10 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+pathadd() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="${PATH:+"$PATH:"}$1"
+    fi
+}
+
+pathadd "$HOME/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -85,6 +90,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export DEFAULT_USER=`whoami`
 
+# Intellij
+pathadd '/Applications/IntelliJ IDEA.app/Contents/MacOS'
 
 alias sed=gsed
 
@@ -93,8 +100,8 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 
 #Go
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
 export GO111MODULE=on
+pathadd $GOPATH/bin
 
 #Java
 if [[ $OSTYPE == "darwin"* ]]; then export JAVA_HOME=$(/usr/libexec/java_home -v 1.8); fi
