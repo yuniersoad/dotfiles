@@ -56,7 +56,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler osx rake ruby golang docker docker-compose rust cargo mvn sbt scala vagrant aws)
+plugins=(git bundler osx rake ruby golang docker docker-compose mvn vagrant aws tmux brew gcloud rbenv z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,10 +93,7 @@ export DEFAULT_USER=`whoami`
 # Intellij
 pathadd '/Applications/IntelliJ IDEA.app/Contents/MacOS'
 
-alias sed=gsed
-
-#Ruby
-export PATH="$HOME/.rbenv/shims:$PATH"
+#alias sed=gsed
 
 #Go
 export GOPATH=$HOME/go
