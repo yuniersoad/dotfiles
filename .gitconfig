@@ -1,6 +1,6 @@
 [core]
 	editor = vim
-  excludesfile = "~/.gitignore"
+  excludesfile = "~/.gitignore_global"
 [user]
 	name = Yunier Perez
 	email = yperez@twilio.com

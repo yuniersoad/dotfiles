@@ -1,3 +1,5 @@
 .idea
 tags
 shared-local-instance.db
+*.swp
+*.swo

@@ -5,7 +5,7 @@ if [ "$PWD" = "$HOME" ]; then
 	exit 1
 fi
 
-DOT_FILES=".gitconfig .gitignore .tmux.conf .vimrc .zshrc .irbrc"
+DOT_FILES=".gitconfig .gitignore_global .tmux.conf .vimrc .zshrc .irbrc"
 
 for f in $DOT_FILES
 do
