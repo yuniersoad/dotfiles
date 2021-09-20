@@ -23,7 +23,9 @@ Plugin 'scrooloose/syntastic'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'tpope/vim-surround'
 Plugin 'mileszs/ack.vim'
-Plugin 'rust-lang/rust.vim'
+Plugin 'townk/vim-autoclose'
+Plugin 'tpope/vim-commentary'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
