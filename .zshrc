@@ -88,6 +88,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias s='git st'
+
 export DEFAULT_USER=`whoami`
 
 # Intellij
