@@ -1,24 +1,14 @@
 #!/bin/sh
 
-if [ "$PWD" = "$HOME" ]; then
-	echo "Error: Needs to be executed in dotfiles directory"
-	exit 1
-fi
-
+SCRIPT=`realpath $0`
+SCRIPTPATH=`dirname $SCRIPT`
 DOT_FILES=".gitconfig .gitignore_global .tmux.conf .vimrc .zshrc .irbrc"
 
-for f in $DOT_FILES
-do
-	if [ ! -f "$PWD/$f" ]; then
-		echo "Error: Needs to be executed in dotfiles directory!"
-		exit 1
-	fi
-done
 
 for f in $DOT_FILES
 do
 	target="$HOME/$f"
-	source="$PWD/$f"
+	source="$SCRIPTPATH/$f"
 	
 	if [ -L "$target" ]; then
 		rm $target
