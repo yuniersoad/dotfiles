@@ -111,3 +111,8 @@ if [[ $OSTYPE == "darwin"* ]]; then export JAVA_HOME=$(/usr/libexec/java_home -v
 if [ -f "$HOME/work.sh" ]; then source "$HOME/work.sh"; fi
 
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$PATH/google-clod-sdk/path.zsh.inc" ]; then . "$PATH/google-clod-sdk/path.zsh.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "$PATH/google-clod-sdk/completion.zsh.inc" ]; then . "$PATH/google-clod-sdk/completion.zsh.inc"; fi
